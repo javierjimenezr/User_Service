@@ -60,7 +60,7 @@ public class UserService {
         return purchaseRepo.findByUsuarioId(userId);
     }
 
-    // ✅ Nuevo método para agregar una compra a un usuario
+  
     public Purchase agregarCompraAUsuario(Long userId, Purchase purchase) {
         Optional<User> optionalUser = userRepo.findById(userId);
         if (optionalUser.isPresent()) {

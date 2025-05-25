@@ -52,7 +52,7 @@ public class UserController {
         return userService.getHistorialDeCompras(id);
     }
 
-    // ✅ Nuevo endpoint: agregar compra a usuario
+
     @PostMapping("/{id}/purchases")
     public Purchase addPurchaseToUser(@PathVariable Long id, @RequestBody Purchase purchase) {
         return userService.agregarCompraAUsuario(id, purchase);
